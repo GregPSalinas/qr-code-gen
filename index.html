@@ -9,16 +9,19 @@
       integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
       crossorigin="anonymous"
     />
+    <link rel="shortcut icon" href="/imgs/qr-code.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
     <title>QRCODEGEN</title>
   </head>
   <body>
     <h1>QR Code Generator</h1>
-    <input type="text" id="urlInput" placeholder="Enter URL" />
-    <button id="generateButton">Generate QR Code</button>
-    <button id="clearButton">Clear</button>
+    <div class="qrInputContainer">
+      <input type="text" id="urlInput" placeholder="Enter URL" />
+      <button id="generateButton">Generate QR Code</button>
+      <button id="clearButton">Clear</button>
+    </div>
     <div id="qrCodeContainer">
-      <img id="qrCodeImage" src="" alt="QR Code" />
+      <img id="qrCodeImage" src="" alt="" />
     </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
